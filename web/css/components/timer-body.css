@@ -1,0 +1,13 @@
+@import url('https://fonts.googleapis.com/css?family=Orbitron:700');
+
+.timer-body {
+  height: 100%;
+  background-color: #18242B;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 100px 0;
+  text-align: center;
+  overflow: hidden;
+}

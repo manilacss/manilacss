@@ -1,0 +1,22 @@
+---
+title: ManilaCSS Timer
+---
+
+extends ../../layouts/base.pug
+
+block body
+  .timer-body
+    img(src='../images/citd_logo.png' class='logo-image -xlarge')
+
+    .clock-tick
+      svg.clock-rim(viewbox='0 0 560 560')
+        defs
+          style.
+            .cls-1{fill:#182a34;}.cls-2{fill:none;stroke:#59cb8f;stroke-miterlimit:10;stroke-width:20px;stroke-dasharray:11.95 11.95;}
+        g#timer-rim
+          circle.cls-2(cx='280', cy='280', r='270')
+      .timer-innerrim.-animated(data-js-timerrim)
+
+      .timer#timer(data-js-timer-countdown)
+
+      .timer-msg#timer-msg(data-js-timer-msg)

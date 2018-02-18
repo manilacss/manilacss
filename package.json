@@ -1,0 +1,51 @@
+{
+  "name": "manilacss",
+  "version": "1.0.0",
+  "author": "Samantha Rose Cruz <samrosecruz@gmail.com> (http://samrosecruz.com)",
+  "babel": {
+    "presets": [
+      "latest",
+      "stage-2"
+    ]
+  },
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-preset-latest": "^6.24.1",
+    "babel-preset-stage-2": "6.16.0",
+    "babelify": "^8.0.0",
+    "browserify": "11.1.0",
+    "jquery": "3.3.1",
+    "jstransformer-pug": "^0.3.0",
+    "metalsmith": "^2.1.0",
+    "metalsmith-browserify-alt": "^2.0.0",
+    "metalsmith-jstransformer": "^0.12.1",
+    "metalsmith-layouts": "^1.4.1",
+    "metalsmith-permalinks": "^0.5.0",
+    "metalsmith-sense-sass": "^2.1.0",
+    "metalsmith-start": "^2.0.1",
+    "metalsmith-uglifyjs": "^0.2.3",
+    "node-sass": "^4.7.2",
+    "normalize": "^0.3.1",
+    "normalize.css": "^8.0.0",
+    "postcss": "^6.0.18",
+    "postcss-cssnext": "^3.1.0",
+    "require-globify": "^1.4.1",
+    "reset.css": "^2.0.2"
+  },
+  "devDependencies": {
+    "modularscale-sass": "^3.0.5",
+    "stylelint": "^8.4.0",
+    "stylelint-rscss": "^0.4.0",
+    "watchify": "^3.10.0"
+  },
+  "keywords": [],
+  "license": "UNLICENSED",
+  "main": "index.js",
+  "scripts": {
+    "build": "env NODE_ENV=production node metalsmith.js",
+    "lint:css": "stylelint web/css/**/*.scss",
+    "prepublish": "npm run build",
+    "start": "metalsmith-start",
+    "test": "npm run lint:css"
+  }
+}

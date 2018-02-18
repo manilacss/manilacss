@@ -1,0 +1,16 @@
+$base-size: 32px;
+
+.logo-image {
+  width: $base-size;
+  height: $base-size;
+
+  &.-xlarge {
+    width: $base-size * 4;
+    height: $base-size * 4;
+  }
+
+  &.-large {
+    width: $base-size * 3;
+    height: $base-size * 3;
+  }
+}
