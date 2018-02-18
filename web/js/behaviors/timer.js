@@ -1,6 +1,6 @@
 $(document).ready(function() {
   // Set time
-  var $timer = $('[data-js-timer-countdown]').html("00" + ":" + "03")
+  var $timer = $('[data-js-timer-countdown]').html("15" + ":" + "01")
 
   var $timerRim = $('[data-js-timerrim]')
   var $timerMsg= $('[data-js-timer-msg]')
