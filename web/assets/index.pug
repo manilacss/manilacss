@@ -1,9 +1,24 @@
 ---
-title: ManilaCSS: A community focused on discussing all thing CSS.
+title: "ManilaCSS: A community focused on discussing all thing CSS."
 ---
 
 extends ../layouts/base.pug
 
 block body
+  include ../partials/shared/svg-sprite.pug
+  .default-nav
+    .left
+      img(src="images/logo.svg")
 
-  h1 Under Construction
+  .top-headtron
+
+  svg(height= '261px' width= '261px')
+    use(xlink:href="#blue-o-large")
+
+  svg(height= '261px' width= '261px')
+    use(xlink:href="#blue-o-small")
+
+  svg(height= '261px' width= '261px')
+    use(xlink:href="#yellow-o")
+
+  h1 Meetup 04
