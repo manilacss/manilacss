@@ -2,7 +2,7 @@
   --citd-green:      #59CB8F;
   --fire-red:        #C02F2F;
 
-  --charcoal:        #353331; /* heading color */
+  --charcoal:        #272727; /* heading color */
   --tin:             #83807D; /* subheading color */
   --ink:             #4a4747; /* body text color */
   --light-ink:       #89949E; /* light text color */
@@ -11,13 +11,23 @@
 $pad:   8px;
 $ms:    1.2;
 
-// Modular scale
-$ms-base: 1rem;
-$ms-ratio: 1.2;
-$ms-fluid: false;
-$ms-range:
-  1.1   20em,
-  1.125 30em,
-  1.15  40em,
-  1.175 50em,
-  1.2   60em;
+$modularscale: (
+  base: 1rem,
+  ratio: 1.2,
+  fluid: false,
+  20em: (
+    ratio: 1.1
+  ),
+  30em: (
+    ratio: 1.125
+  ),
+  40em: (
+    ratio: 1.15
+  ),
+  50em: (
+    ratio: 1.175
+  ),
+  60em: (
+    ratio: 1.2
+  ),
+);
