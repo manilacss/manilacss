@@ -11,14 +11,29 @@ block body
       img(src="images/logo.svg")
 
   .top-headtron
+    svg(height= '261px' width= '261px')
+      use(xlink:href="#blue-o-large")
 
-  svg(height= '261px' width= '261px')
-    use(xlink:href="#blue-o-large")
+    svg(height= '261px' width= '261px')
+      use(xlink:href="#blue-o-small")
 
-  svg(height= '261px' width= '261px')
-    use(xlink:href="#blue-o-small")
+    svg(height= '261px' width= '261px')
+      use(xlink:href="#yellow-o")
 
-  svg(height= '261px' width= '261px')
-    use(xlink:href="#yellow-o")
+    .main
+      time.mini-calendar
+        .month Apr
+        .day 00
+      h1.title Meetup 04
+      p.venue TBA
+      time.dates April 00, 2018, Thursday, 7PM to 9PM
 
-  h1 Meetup 04
+    .action
+      a(href= 'https://google.com' class= 'push-btn')
+        | Default
+
+      a(href= 'https://google.com' class= 'push-btn -secondary')
+        | Register
+
+      a(href= 'https://google.com' class= 'push-btn -disabled')
+        | Event is over

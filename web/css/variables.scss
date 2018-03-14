@@ -2,13 +2,22 @@
   --citd-green:      #59CB8F;
   --fire-red:        #C02F2F;
 
-  --charcoal:        #272727; /* heading color */
-  --tin:             #83807D; /* subheading color */
-  --ink:             #4a4747; /* body text color */
-  --light-ink:       #89949E; /* light text color */
-}
+  --light-blue:      #37D7FF;
 
-$pad:   8px;
+  --charcoal:        #272727; /* heading color */
+  --tin:             #e7e7e7; /* subheading color */
+  --ink:             #4a4747; /* body text color */
+  --light-ink:       #949292; /* light text color */
+}
+  $light-blue:      #37D7FF;
+
+// Type
+
+$system-font: -apple-system, BlinkMacSystemFont,"Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+
+$font-header: 'Oswald', $system-font;
+$font-body: 'Source Sans Pro', $system-font;
+
 $ms:    1.2;
 
 $modularscale: (
@@ -31,3 +40,4 @@ $modularscale: (
     ratio: 1.2
   ),
 );
+

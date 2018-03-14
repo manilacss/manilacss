@@ -1,0 +1,26 @@
+.push-btn {
+  --col: var(--set-color);
+
+  --set-color: var(--light-blue);
+  padding: .5em 1em;
+  border: 1px solid var(--col);
+  background-color: var(--col);
+  color: #fff;
+  display: inline-block;
+  text-transform: uppercase;
+  font-weight: 700;
+
+  &:any-link {
+    text-decoration: none;
+  }
+
+  &.-secondary {
+    --set-color: transparent;
+    color: var(--light-blue);
+  }
+
+  &.-disabled {
+    --set-color: var(--tin);
+    color: var(--light-ink);
+  }
+}
